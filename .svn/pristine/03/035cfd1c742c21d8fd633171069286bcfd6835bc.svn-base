@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.quauq.autoTest.dao.EnvironmentDAO">
+	<resultMap type="Environment" id="resultMap">
+		<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="url" column="url" />
+	</resultMap>
+	<select id="findEnvironmentById" parameterType="Integer" resultMap="resultMap">
+		select * from t_environment t where t.id=#{id}
+	</select>
+	<select id="findEnvironmentList" resultMap="resultMap">
+		select * from t_environment
+	</select>
+	<delete id="deleteEnvironment" parameterType="Integer">
+		delete from t_environment where id=#{id}
+	</delete>
+	<insert id="insertEnvironment" parameterType="Environment">
+		insert into t_environment(name,url)
+		values(#{name},#{url})
+	</insert>
+	<update id="updateEnvironment" parameterType="Environment">
+		update t_environment set name=#{name} , url=#{url} where id=#{id}
+	</update>
+
+</mapper>  
+

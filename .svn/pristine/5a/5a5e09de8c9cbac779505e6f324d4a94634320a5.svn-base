@@ -1,0 +1,31 @@
+package com.quauq.test.service;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.quauq.autoTest.model.User;
+import com.quauq.autoTest.service.UserService;
+import com.quauq.test.Base.TestBase;
+
+public class TestUserService extends TestBase{
+	private UserService userService;
+	@Override
+	public void doBeforeClass() {
+		userService = (UserService) ac.getBean("userService");
+	}
+
+	@Override
+	public void doAfterClass() {
+		// TODO Auto-generated method stub
+
+	}
+	@Test
+	/**
+	 * 使用不存在的Id
+	 */
+	public void testFindUserById() {
+		User user = userService.findUserById(6);
+		System.out.println(user.getName());
+		Assert.assertEquals(user.getName(), null, "使用不存在的Id，没有找到数据");
+	}
+}

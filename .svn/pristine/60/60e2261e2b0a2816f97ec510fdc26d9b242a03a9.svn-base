@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias alias="User" type="com.quauq.autoTest.model.User"/>
+		<typeAlias alias="Page" type="com.quauq.autoTest.model.Page"/>
+		<typeAlias alias="Group" type="com.quauq.autoTest.model.Group"/>
+		<typeAlias alias="Customer" type="com.quauq.autoTest.model.Customer"/>
+		<typeAlias alias="ActionInfo" type="com.quauq.autoTest.model.ActionInfo"/>
+		<typeAlias alias="DataMap" type="com.quauq.autoTest.model.DataMap"/>
+		<typeAlias alias="DataMapCollection" type="com.quauq.autoTest.model.DataMapCollection"/>
+		<typeAlias alias="Case" type="com.quauq.autoTest.model.Case"/>
+		<typeAlias alias="BaseCase" type="com.quauq.autoTest.model.BaseCase"/>
+		<typeAlias alias="CasePage" type="com.quauq.autoTest.model.CasePage"/>
+		<typeAlias alias="CaseData" type="com.quauq.autoTest.model.CaseData"/>
+		<typeAlias alias="Category" type="com.quauq.autoTest.model.Category"/>
+		<typeAlias alias="RunCaseResult" type="com.quauq.autoTest.model.RunCaseResult"/>
+		<typeAlias alias="Environment" type="com.quauq.autoTest.model.Environment"/>
+		<typeAlias alias="UserGroup" type="com.quauq.autoTest.model.UserGroup"/>
+		<typeAlias alias="Strategy" type="com.quauq.autoTest.model.Strategy"/>
+		<typeAlias alias="Context" type="com.quauq.autoTest.model.Context"/>
+		<typeAlias alias="Role" type="com.quauq.autoTest.model.Role"/>
+		<typeAlias alias="Menu" type="com.quauq.autoTest.model.Menu"/>
+		<typeAlias alias="RoleMenu" type="com.quauq.autoTest.model.RoleMenu"/>
+		<typeAlias alias="Client" type="com.quauq.autoTest.model.Client"/>
+		<typeAlias alias="Element" type="com.quauq.autoTest.model.Element"/>
+		<typeAlias alias="Degrade" type="com.quauq.autoTest.model.Degrade"/>
+		<typeAlias alias="DegradeData" type="com.quauq.autoTest.model.DegradeData"/>
+	</typeAliases>
+	<mappers>
+		<mapper resource="com/quauq/autoTest/mapper/UserMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/DegradeMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/DegradeDataMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/PageMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/GroupMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/CustomerMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/ActionMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/DataMapMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/DataMapCollectionMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/CaseMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/BaseCaseMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/CasePageMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/CaseDataMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/CategoryMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/RunCaseResultMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/EnvironmentMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/UserGroupMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/StrategyMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/ContextMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/RoleMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/MenuMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/RoleMenuMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/ClientMap.xml" />
+		<mapper resource="com/quauq/autoTest/mapper/ElementMap.xml" />
+	</mappers>
+</configuration>

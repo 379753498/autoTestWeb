@@ -1,0 +1,54 @@
+package com.quauq.autoTest.service;
+
+import java.util.List;
+
+import com.quauq.autoTest.dao.EnvironmentDAO;
+import com.quauq.autoTest.model.Environment;
+
+public class EnvironmentService extends IService {
+	private EnvironmentDAO environmentDao;
+
+	public List<Environment> findEnvironmentList() {
+		return environmentDao.findEnvironmentList();
+	}
+
+	public int insertEnvironment(Environment environment) {
+		try {
+			return environmentDao.insertEnvironment(environment);
+		} catch (Exception e) {
+			log.info(e.toString());
+			throw new RuntimeException(e.toString());
+		}
+	}
+
+	public Environment findEnvironmentById(int id) {
+		return environmentDao.findEnvironmentById(id);
+	}
+
+	public int deleteEnvironment(int id) {
+		try {
+			return environmentDao.deleteEnvironment(id);
+		} catch (Exception e) {
+			log.info(e.toString());
+			throw new RuntimeException(e.toString());
+		}
+	}
+
+	public int updateEnvironment(Environment environment) {
+		try {
+			return environmentDao.updateEnvironment(environment);
+		} catch (Exception e) {
+			log.info(e.toString());
+			throw new RuntimeException(e.toString());
+		}
+	}
+
+	public EnvironmentDAO getEnvironmentDao() {
+		return environmentDao;
+	}
+
+	public void setEnvironmentDao(EnvironmentDAO environmentDao) {
+		this.environmentDao = environmentDao;
+	}
+
+}

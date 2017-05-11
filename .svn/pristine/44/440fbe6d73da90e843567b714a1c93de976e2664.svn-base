@@ -1,0 +1,23 @@
+package com.quauq.test.Base;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+public abstract class TestBase {
+	protected ApplicationContext ac;
+	@BeforeClass
+	public void setUp(){
+		if(null==ac){
+			ac= new ClassPathXmlApplicationContext("applicationContext.xml");
+		}
+		doBeforeClass();
+	}
+	public abstract void doBeforeClass();
+	@AfterClass
+	public void tearDown(){
+		
+	}
+	public abstract void doAfterClass();
+}
