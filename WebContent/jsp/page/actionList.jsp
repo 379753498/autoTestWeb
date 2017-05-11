@@ -95,8 +95,6 @@
 			xpath += "}}";
 			jsonDataMapCollection += "}";
 		}
-		alert(jsonDataMapCollection);
-		return;
 		var contextKey = $("#txtContextKey").val();
 		var defaultValue = "";
 		if ($("#secValueCategory").val() == 1) {
