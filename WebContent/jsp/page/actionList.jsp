@@ -712,7 +712,7 @@
 				$("#commonNameContainer").text("Element Xpath");
 			}
 			if($(obj).val()=="switchTitle"||$(obj).val()=="switchTab"){
-				$("#commonNameContainer").text("Quauq页面Title");
+				$("#commonNameContainer").text("cd页面Title");
 			}
 		}else{
 			$("#commonNameContainer").text("Element Xpath");

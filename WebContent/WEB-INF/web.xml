@@ -6,7 +6,7 @@
 	<filter>   
         <filter-name>access filter</filter-name>   
         <filter-class>   
-             com.quauq.autoTest.filter.AccessFilter   
+             com.cd.autoTest.filter.AccessFilter   
         </filter-class>   
     </filter>   
     <filter-mapping>   
@@ -16,7 +16,7 @@
 	<filter>
 		<filter-name>struts2</filter-name>
 		<filter-class>
-			com.quauq.autoTest.filter.BaseFilterDispatcher
+			com.cd.autoTest.filter.BaseFilterDispatcher
 		</filter-class>
 	</filter>
 	<filter-mapping>

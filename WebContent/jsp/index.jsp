@@ -167,7 +167,7 @@
 		</div>
 		<div class="clear"></div>
 		<div id="bottom">
-			<div id="bottomcontent">QUAUQ</div>
+			<div id="bottomcontent">cd</div>
 		</div>
 	</div>
 </body>

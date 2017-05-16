@@ -679,7 +679,7 @@ INSERT INTO `t_element` VALUES ('10490', '输入团号', '1', '1', 'html.sendKey
 INSERT INTO `t_element` VALUES ('10499', '输入成人策略数', '1', '1', 'html.sendKeys', '成人策略数', '//*[@id=\"adultPricingStrategy\"]/div/input', '', '1', '', '5', '0', '743', '0');
 INSERT INTO `t_element` VALUES ('10503', '输入儿童策略数', '1', '1', 'html.sendKeys', '儿童策略数', '//*[@id=\"childPricingStrategy\"]/div/input', '', '1', '', '7', '0', '743', '0');
 INSERT INTO `t_element` VALUES ('10506', '输入特殊人群策略数', '1', '1', 'html.sendKeys', '特殊人群策略数', '//*[@id=\"specialPricingStrategy\"]/div/input', '', '1', '', '9', '0', '743', '0');
-INSERT INTO `t_element` VALUES ('10514', '输入Quauq渠道', '1', '1', 'html.sendKeys', 'Quauq渠道', '//label[contains(text(),\"渠道选择\")]/following-sibling::span[2]/input[1]', '', '1', '', '1', '10513', '45', '0');
+INSERT INTO `t_element` VALUES ('10514', '输入cd渠道', '1', '1', 'html.sendKeys', 'cd渠道', '//label[contains(text(),\"渠道选择\")]/following-sibling::span[2]/input[1]', '', '1', '', '1', '10513', '45', '0');
 INSERT INTO `t_element` VALUES ('10526', '收集订单号并放入内存', '4', '1', 'html.getTextOrValue', '', '//*[@id=\"orderNumOrGroupCode\"]', 'orderCode', '1', '', '3', '0', '744', '0');
 INSERT INTO `t_element` VALUES ('10530', '收集订单状态', '1', '1', 'html.gatherData', '订单状态', '//*[@id=\"orderOrGroup_group_tbody\"]/tr[2]/td/table/tbody/tr[1]/td[9]', '', '1', '', '7', '0', '744', '0');
 INSERT INTO `t_element` VALUES ('10533', '输入团号', '1', '1', 'html.sendKeys', '团号', '//*[@id=\"wholeSalerKey\"]', '', '2', 'groupCode', '5', '0', '745', '0');
