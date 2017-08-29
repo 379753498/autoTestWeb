@@ -379,7 +379,7 @@
 				}
 				$("#btnUpdateAction").show();
 				$("#btnAddAction").hide();
-				$("#actionModalTitle").text("页面元素编辑");
+				$("#actionModalTitle").text("Action编辑");
 				$('#actionModal').modal('show');
 			}
 		});
